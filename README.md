@@ -7,6 +7,8 @@ This analysis uses the cuDF library, which is a GPU-boosting data science librar
 
 Usage of this library requires a Linux environment. The analysis was done on a Windows operating system using [WSL2 Conda](https://docs.rapids.ai/install/#wsl2-conda) to download the RAPIDS framework to a local Linux installation.  
 
+In addition, [DVC](https://dvc.org/doc/install) is used to manage data versions for different use cases. Versions evolve as the scope of a research question is explored, and data will change as it is molded for machine learning algorithms. The file `initial_EDA.ipynb` begins the construction of a lakeFS client using the Python API, allowing for clarity on the content of different versions.
+
 ## Data
 
 This data is sourced from [Huggingface](https://huggingface.co/datasets/renecotyfanboy/leagueData), and contains 300k individual matches gathered from the RiotAPI across all ranked divisions. The data was gathered on April 9th, 2024. 
